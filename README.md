@@ -14,10 +14,10 @@ This was written in python using [my very own neural network library](https://gi
 
 ### Getting the Source
 
-This project is [hosted on GitHub](https://github.com/IAmDaanE/ml-function-learning). You can download the zip or clone this project directly using this command:
+This project is [hosted on GitHub](https://github.com/IAmDaanE/ai-function-learning). You can download the zip or clone this project directly using this command:
 
 ```
-git clone git@github.com:IAmDaanE/ml-function-learning.git
+git clone git@github.com:IAmDaanE/ai-function-learning.git
 ```
 
 ### Running the Program
