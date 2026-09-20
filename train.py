@@ -1,16 +1,16 @@
 import matplotlib.pyplot as plt
 import os
-import nnlib_py as nn 
+import barebones_ml as bbml 
 import numpy as np
 
 hidden_size = 16
 
-network = nn.Network(nn.Losses.mse)
+network = bbml.Network(bbml.Losses.mse)
 
-network.add(nn.Layer(1, hidden_size, nn.Activations().relu, nn.WeightInitializers.he))
-network.add(nn.Layer(hidden_size, hidden_size, nn.Activations().relu, nn.WeightInitializers.he))
-network.add(nn.Layer(hidden_size, hidden_size, nn.Activations().relu, nn.WeightInitializers.he))
-network.add(nn.Layer(hidden_size, 1, nn.Activations().linear, nn.WeightInitializers.xavier))
+network.add(bbml.Layer(1, hidden_size, bbml.Activations().relu, bbml.WeightInitializers.he))
+network.add(bbml.Layer(hidden_size, hidden_size, bbml.Activations().relu, bbml.WeightInitializers.he))
+network.add(bbml.Layer(hidden_size, hidden_size, bbml.Activations().relu, bbml.WeightInitializers.he))
+network.add(bbml.Layer(hidden_size, 1, bbml.Activations().linear, bbml.WeightInitializers.xavier))
 
 plt.ion()
 
@@ -18,7 +18,7 @@ def run_training(epochs, start_lr):
     current_lr = start_lr
 
     x = np.linspace(-200, 200, 1000).reshape(-1, 1)
-    correct_y = np.sin(x / 15) * 10 # the actual function to learn
+    correct_y = np.sin(x / 15) # the actual function to learn
 
     x_mean, x_std = x.mean(), x.std()
     y_mean, y_std = correct_y.mean(), correct_y.std()
@@ -34,7 +34,7 @@ def run_training(epochs, start_lr):
         network.loss = loss
         network.backward(predicted_y_norm, y_norm)
         network.update(current_lr)
-        current_lr = nn.LrDecays.linear_decay(current_lr, 0.0000000000000000000000000000095, 0.0005)
+        current_lr = bbml.LRDecays.linear_decay(current_lr, 0.0000000000000000000000000000095, 0.0005)
         if epoch % 10 == 0:
             predicted_y = predicted_y_norm * y_std + y_mean
             plt.clf()
@@ -43,7 +43,7 @@ def run_training(epochs, start_lr):
             plt.title(f'epoch {epoch} | loss {loss:.6f}')
             plt.legend()
             plt.pause(0.01)
-            network.visualize(1, 16, 3, 1, 1920, 1080, "proportional")
+            network.visualize(1, hidden_size, 3, 1, 1920, 1080, "proportional")
         if network.screen:
             network.check_pygame_events()
 
