@@ -8,7 +8,7 @@ Train an AI to take the shape of any mathmematical function.
 
 ## About the Project
 
-This was written in python using [my very own neural network library](https://github.com/IAmDaanE/bare-bones-ml). The input into the neural network is just the normalized x value and the network should spit out the y value for that x value. The function's are visualized using MatPlotLib and the neural network is visualized by that neural network library using pygame.
+This was written in python using my very own [barebones_ml](https://github.com/IAmDaanE/bare-bones-ml) neural network library. The input into the neural network is just the normalized x value and the network should spit out the y value for that x value. The function's are visualized using MatPlotLib and the neural network is visualized by that neural network library using pygame.
 
 ## Getting Started
 
