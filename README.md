@@ -12,30 +12,21 @@ This was written in python using my very own [barebones_ml](https://github.com/I
 
 ## Getting Started
 
-### Getting the Source
+**Requires:** Python 3.10 - 3.14
+1. Install the needed libraries, preferably in a venv.
 
-This project is [hosted on GitHub](https://github.com/IAmDaanE/ai-function-approximation). You can download the zip or clone this project directly using this command:
-
-```
-git clone git@github.com:IAmDaanE/ai-function-approximation.git
-```
-
-### Running the Program
-
-Requirements: You must have Python 3.9 - 3.13.
-1. Clone the repository or download the zip and unpack it to your directory of choice.
-2. Navigate to that directory in a terminal.
-3. In a venv or the global python version install the needed libraries.
     ```
     pip install -r requirements.txt
     ```
-4. Run the program.
+2. Run the program.
+
     ```
     python train.py
     ```
-5. To change the function the AI should learn change this line in train.py:
+3. To change the function the AI should learn change this line in train.py:
+
     ```python
-    correct_y = np.sin(x / 15) * 10 # the actual function to learn
+    correct_y = np.sin(x / 15)
     ```
 
 ## License
