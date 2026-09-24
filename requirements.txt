@@ -1,2 +1,5 @@
 git+https://github.com/IAmDaanE/bare-bones-ml.git@master
 matplotlib
+Pillow
+pygame-ce
+numpy

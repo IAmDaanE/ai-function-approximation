@@ -10,7 +10,7 @@ Train an AI to take the shape of any mathmematical function.
 
 This was written in python using my very own [barebones_ml](https://github.com/IAmDaanE/bare-bones-ml) machine learning library. The input into the neural network is just the normalized x value and the network should spit out the y value for that x value. The function's are visualized using MatPlotLib and the neural network is visualized by barebones_ml using pygame.
 
-## Getting Started
+## Starting Visual Training
 
 **Requires:** Python 3.10 - 3.14
 1. Install the needed libraries, preferably in a venv.
@@ -18,7 +18,7 @@ This was written in python using my very own [barebones_ml](https://github.com/I
     ```
     pip install -r requirements.txt
     ```
-2. Run the program.
+2. Start and watch the training
 
     ```
     python train.py
