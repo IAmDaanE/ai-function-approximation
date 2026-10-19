@@ -1,6 +1,6 @@
 # AI Function Approximation
 
-Train an AI model to take the shape of any mathmematical function.
+Train an AI model to take the shape of any mathematical function.
 
 ---
 
