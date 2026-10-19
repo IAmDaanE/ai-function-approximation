@@ -8,7 +8,7 @@ Train an AI to take the shape of any mathmematical function.
 
 ## About the Project
 
-This was written in python using my very own [barebones_ml](https://github.com/IAmDaanE/bare-bones-ml) machine learning library. The input into the neural network is just the normalized x value and the network should spit out the y value for that x value. The function's are visualized using MatPlotLib and the neural network is visualized by barebones_ml using pygame.
+This was written in python using my very own [barebones_ml](https://github.com/IAmDaanE/bare-bones-ml) machine learning library, this gives a nice UI overview of what is happening during training.  The function's are visualized using [pgplot](https://github.com/IAmDaanE/pygame-plot), a pygame graphing library I also wrote myself. The target function is sampled and these sample points are given as input to the network. It should then learn the function and give a y value for every x.
 
 ## Starting Visual Training
 
@@ -18,16 +18,14 @@ This was written in python using my very own [barebones_ml](https://github.com/I
     ```
     pip install -r requirements.txt
     ```
+
 2. Start and watch the training
 
     ```
-    python train.py
+    python src/train.py "cos" 45
     ```
-3. To change the function the AI should learn change this line in train.py:
 
-    ```python
-    correct_y = np.sin(x / 15)
-    ```
+    There are two cli arguments: the name of the mathmetical function and the amount of data samples.
 
 ## License
 
