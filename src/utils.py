@@ -27,7 +27,7 @@ def function_stringparser(function_string, x):
         return fn.parabola(x)
     elif function_string == "heartbeat":
         return fn.heartbeat(x)
-    elif function_string == "cos":
-        return fn.cos(x)
+    elif function_string == "sin":
+        return fn.sin(x)
     else:
         raise ValueError("This function does not exist.")

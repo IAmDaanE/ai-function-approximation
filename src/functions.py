@@ -21,7 +21,7 @@ def heartbeat(x):
     y = np.cos(modified_x) - np.cos(5 * modified_x)
     return y
 
-def cos(x):
+def sin(x):
     modified_x = x * 8
-    y = np.cos(modified_x)
+    y = np.sin(modified_x)
     return y
