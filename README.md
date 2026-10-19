@@ -1,10 +1,10 @@
 # AI Function Approximation
 
-Train an AI to take the shape of any mathmematical function.
+Train an AI model to take the shape of any mathmematical function.
 
 ---
 
-<img width="958" height="630" alt="image" src="https://github.com/user-attachments/assets/d580e826-7ec1-4a9a-afb8-221cf42fee04" />
+<img width="1464" height="910" alt="Schermafbeelding 2026-10-18 171348" src="https://github.com/user-attachments/assets/eeef5c04-93dd-493c-8bb0-7b5ef6c3cda3" />
 
 ## About the Project
 
