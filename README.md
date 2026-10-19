@@ -1,4 +1,4 @@
-# ML Function Approximation
+# AI Function Approximation
 
 Train an AI to take the shape of any mathmematical function.
 
